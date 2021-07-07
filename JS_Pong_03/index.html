@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+
+ Modified by: Yi Chen
+
+
+Edits:
+1) Original HTML taken from https://gist.github.com/baniol/9851354
+2) modified to employ OOP, collision
+
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Yi's JavaScript Pong</title>
+        <style type="text/css">
+            canvas{ border:#fdc6da 1px solid;}
+        </style>
+        <link href="tny_styles.css" rel="stylesheet" />
+        <!--      dangerous to load js files simultaneously, better to use jQuery-->
+        <script src="shape.js"></script>
+        <script src="square.js"></script>
+        <script src="mario.js"></script>
+        <script src="circle.js"></script>
+        <script src="padel.js"></script>
+        <script src="init.js"></script>
+    </head>
+    <body onload="init();">
+    <header>
+        <div id="points">
+            <div><span id="player1">10</span><br />Player 1</div>
+            <div><span id="player2">10</span><br />Player 2</div>
+            <div>Mouse</br><span id="logOutput"></span></div>
+        </div>
+    </header>
+    <div>
+            <canvas id="canvas" width="1000" height="800">
+                Sorry, browser does not support canvas.
+            </canvas>
+        </div>
+        <!--        "canvas" is referenced inside js files-->
+    <div id="win">
+        <div><span id="winner">Winner: </span></div>
+    </div>
+    <img src="mario.png" id="mario" style="display:none"/>
+    </body>
+</html>

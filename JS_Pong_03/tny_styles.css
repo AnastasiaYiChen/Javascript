@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/*
+
+ Filename: tny_styles.css
+ Modified by: Russ
+ Date: 29 Nov 2018
+
+*/
+
+
+/* HTML and Body styles */
+
+html {
+   background: linear-gradient(to bottom, #a88d73, #36272c);
+   font-family: Verdana, Geneva, sans-serif;
+   min-height: auto;
+}
+
+body { 
+   margin: 0px auto;
+   min-width: 340px;
+   max-width: 1020px;  
+   width: 100%;
+   min-height: 100%;
+}
+
+
+
+/* Styles for points */
+
+div#points {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    width: 45%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+div#points div {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    margin: 0px 10px;
+    color: pink;
+    text-align: center;
+}
+
+
+/* Styles for winner */
+
+div#win {
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+    width: 45%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+div#win div {
+    display: block;
+    text-align: center;
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    margin: 0px 10px;
+    color: lightskyblue;
+    text-align: center;
+}
+
